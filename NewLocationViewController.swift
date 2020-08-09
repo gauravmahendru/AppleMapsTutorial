@@ -10,13 +10,26 @@ import UIKit
 
 class NewLocationViewController: UIViewController {
 
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var latitudeTextField: UITextField!
+    @IBOutlet weak var longitudeTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func useCurrentLocation(_ sender: Any) {
+    }
+    
+    
+    @IBAction func saveLocation(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

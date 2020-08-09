@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class MapViewController: UIViewController {
 
@@ -16,7 +17,8 @@ class MapViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var mapView: MKMapView!
+    
     /*
     // MARK: - Navigation
 
