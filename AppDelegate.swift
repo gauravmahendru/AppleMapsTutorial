@@ -16,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let splitView = self.window!.rootViewController as! UISplitViewController
+        let navigationController = splitView.viewControllers.first as! UINavigationController
+        let mapView = splitView.viewControllers.last as! MapViewController
+        let locationView = navigationController.viewControllers.first as! LocationTableViewController
+        
+        locationView.mapViewController = mapView
+        
         return true
     }
 
